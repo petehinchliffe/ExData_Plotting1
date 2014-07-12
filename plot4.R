@@ -4,7 +4,7 @@ hpc <- hpcAll[hpcAll$Date == '1/2/2007' | hpcAll$Date == '2/2/2007',]
 DTs <- strptime(paste(hpc$Date, hpc$Time, sep=" "), "%d/%m/%Y %H:%M:%S")
 hpc <- cbind(DTs,hpc)
 
-png('plot4.png', width=480, height=480)
+png('plot4.png', width=480, height=480, bg="transparent")
 
 # use 2x2 layout
 par(mfrow=c(2,2))
